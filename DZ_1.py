@@ -3,4 +3,14 @@
 # *Пример:*
 
 # A = 3; B = 5 -> 243 (3⁵)
-#     A = 2; B = 3 -> 8 
+# A = 2; B = 3 -> 8 
+
+
+def pow(a,n):
+    if n == 1:
+        return a
+    return(a*(pow(a,n-1)))
+    
+print(pow(3,5))
+
+
